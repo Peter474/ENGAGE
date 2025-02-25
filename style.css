@@ -31,7 +31,7 @@
         }
 .asd{
     z-index: -1;
-    width: 1520px;
+    width: 1526px;
 }
         .container h1 {
             font-size: 1.5em;
@@ -465,7 +465,7 @@ h1, h2, h3, h4, h5, h6, p, span, div, a, button {
 .sonn {
     background-color: #030202; 
     min-height: 100px; 
-    width: 100.9%; 
+    width: 1526px; 
     display: flex; 
     position: absolute; 
     padding: 20px; 
@@ -566,7 +566,8 @@ padding-left: 710px;
 position: absolute;
     left: 0;
     bottom: -4450px;
-    width: 100%;
+    width: 1526px;
+    height: 8%;
 }
 
 .footer .social-media-links {
@@ -592,7 +593,7 @@ position: absolute;
 .son2{
     background-color: #2a2929; 
     min-height: 100px; 
-    width: 100.9%; 
+    width: 1526px;  
     display: flex; 
     position: absolute; 
     padding: 20px; 
@@ -940,7 +941,7 @@ position: absolute;
 .son3{
     background-color: #151414; 
     min-height: 100px; 
-    width: 100.9%; 
+    width: 1526px; 
     display: flex; 
     position: absolute; 
     padding: 20px; 
@@ -988,7 +989,7 @@ position: absolute;
     top: 4080px;
     opacity: 0.9;
     z-index: -1;
-    width: 1520px;
+    width: 1526px;
     margin: 0;
     padding: 0;
     height:600px ;
@@ -1033,7 +1034,7 @@ position: absolute;
 .son4{
     background-color: #1f1f1f; 
     min-height: 100px; 
-    width: 100.9%; 
+    width: 1526px; 
     display: flex; 
     position: absolute; 
     padding: 20px; 
