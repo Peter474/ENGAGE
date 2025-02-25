@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENGAGE | Beautiful Hat</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+        body{
+            padding-top: 70px;
+        background-image: url(images/black.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        position: relative;
+        top: 400;
+        }
+    </style>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">ENGAGE</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="Beautiful Hat.html">Shop</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        About
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Blog</a></li>
+                        <li><a class="dropdown-item" href="#">Contact</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Reviews of Our Customers</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a href="#" class="cart-icon">
+                <i class="fa-solid fa-cart-shopping fa-2x"></i>
+            </a>
+            <form class="d-flex ms-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+<div class="containerrr mt-5">
+
+    <img src="images/hat2-400x400.jpg" class="card-img-topp zoomable-image" alt="Light Shoes" data-bs-toggle="modal" data-bs-target="#imageModal">
+    <div class="product-details">
+        <h1>Beautiful Hat</h1>
+        <div class="rating">★★★★★ (2 customer reviews)</div>
+        <div class="price">£15.00</div>
+        <div class="description">
+            Pellentesque habitant morbi tristique senectus et <br>netus et malesuada fames ac turpis egestas.<br> Vestibulum tortor quam, feugiat vitae, ultricies eget,<br> tempor sit amet, ante. Donec eu libero sit amet quam <br>egestas semper.<br> Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+        </div>
+        <div class="quantity">
+            Quantity: <input type="number" value="1" min="1">
+        </div>
+        <button>ADD TO CART</button>
+    </div>
+</div>
+<button id="scrollTopBtn" class="btn btn-primary" style="position: fixed; bottom: 20px; right: 20px; display: none;"> ↑
+</button>
+<input type="color" id="colorPicker" class="form-control form-control-color" value="#000000">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+<footer class="footerr">
+    <ul class="social-media-links">
+        <li><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a></li>
+    </ul>
+</footer>
+</body>
+</html>
