@@ -1,3 +1,4 @@
+// Scroll Top Button
 let scrollTopBtn = document.getElementById("scrollTopBtn");
 window.onscroll = function () {
     if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
@@ -9,21 +10,19 @@ window.onscroll = function () {
 scrollTopBtn.onclick = function () {
     window.scrollTo({top: 0, behavior: "smooth"});
 };
-document.getElementById("colorPicker").addEventListener("input", function () {
+
+// Color Picker
+let colorPicker = document.getElementById("colorPicker");
+colorPicker.addEventListener("input", function () {
     let selectedColor = this.value;
     document.body.style.color = selectedColor;
-    document.querySelectorAll("h1, h2, h3, h4, h5, h6, p, span, div,navPar").forEach(element => {
+    document.querySelectorAll("h1, h2, h3, h4, h5, h6, p, span, div, nav, a, button").forEach(element => {
         element.style.color = selectedColor;
     });
-    document.querySelectorAll("a").forEach(link => {
-        link.style.color = selectedColor;
-    });
-    document.querySelectorAll("button").forEach(button => {
-        button.style.color = selectedColor;
-    });
 });
-dragElement(document.getElementById("colorPicker"));
+dragElement(colorPicker);
 
+// Drag Function
 function dragElement(el) {
     let pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
     el.onmousedown = dragMouseDown;
@@ -53,6 +52,8 @@ function dragElement(el) {
         document.onmousemove = null;
     }
 }
+
+// Add to Cart Counter
 document.querySelectorAll('.add-to-cart').forEach(button => {
     button.addEventListener('click', function() {
         var cartCountElement = document.querySelector('.cart-count');
@@ -63,9 +64,11 @@ document.querySelectorAll('.add-to-cart').forEach(button => {
         }
 
         cartCountElement.textContent = currentCount + 1;
-        this.classList.add('button-hover');
+
+        // Animation effect
+        this.style.transform = "scale(1.2)";
         setTimeout(() => {
-            this.classList.remove('button-hover');
+            this.style.transform = "scale(1)";
         }, 200);
     });
 });
