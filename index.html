@@ -1,206 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ENGAGE</title>
-
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Responsive Web</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-  <!-- ===== Navbar ===== -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
-    <div class="container-fluid">
-      <a class="navbar-brand fw-bold" href="#">ENGAGE</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">About</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Blog</a></li>
-              <li><a class="dropdown-item" href="#">Contact</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Reviews of Our Customers</a></li>
-            </ul>
-          </li>
-        </ul>
-
-        <a href="#" class="cart-icon position-relative me-3">
-          <i class="fa-solid fa-cart-shopping fa-lg"></i>
-          <span class="cart-count position-absolute top-0 start-100 translate-middle badge bg-danger">0</span>
-        </a>
-
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" />
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
+<!-- Navbar -->
+<nav class="navbar">
+    <a href="#" class="navbar-brand">BrandName</a>
+    <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Contact</a>
     </div>
-  </nav>
-
-  <!-- ===== Hero Section ===== -->
-  <section class="hero-section text-center text-white d-flex align-items-center justify-content-center" style="background-image: url('images/camera-photographer-monochrome-ara-güler-wallpaper.jpg');">
-    <div class="overlay"></div>
-    <div class="hero-content">
-      <h1>Welcome to</h1>
-      <h2>Dark Shop</h2>
-      <p>We're the biggest, best equipped and most advanced Web Agency in the greater Los Angeles area.</p>
-      <a href="#" class="btn btn-light mt-3 px-4">Learn More</a>
+    <div class="cart">
+        <i class="fas fa-shopping-cart cart-icon"></i>
+        <span class="cart-count">0</span>
     </div>
-  </section>
+</nav>
 
-  <!-- ===== About Section ===== -->
-  <section class="about text-center py-5">
-    <div class="container">
-      <h2>Learn about us</h2>
-      <p>We have been operating for over 30 years and are Members of The Federation of Master Builders.
-        We work on projects big and small from small residential extensions to full house and commercial builds.
-        We are registered NHBC house builders.</p>
+<!-- Hero Section -->
+<section class="hero">
+    <img src="images/hero.jpg" alt="Hero Image" class="hero-img">
+    <div class="hero-text">
+        <h1>Welcome to Our Store</h1>
+        <h2>Best Products for You</h2>
+        <p>Explore our amazing collection.</p>
+        <a href="#" class="but12">Shop Now</a>
     </div>
-  </section>
+</section>
 
-  <!-- ===== Products Section ===== -->
-  <section class="products py-5">
-    <div class="container">
-      <h2 class="text-center mb-5">Our Products</h2>
-      <div class="products-container">
-
-        <!-- Product 1 -->
-        <div class="product-card">
-          <img src="images/shoes2-400x400.jpg" alt="Light Shoes" />
-          <a href="Light Shoes.html" class="view-details">View Details</a>
-          <div class="product-info">
-            <p>Light Shoes <br> £18.00</p>
-            <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
-          </div>
+<!-- Products Section -->
+<section class="products">
+    <div class="card">
+        <img src="images/product1.jpg" class="card-img-top" alt="Product 1">
+        <div class="card-body">
+            <h5 class="card-title">Product 1</h5>
+            <p class="card-text">$25.00</p>
+            <a href="#" class="add-to-cart"><i class="fas fa-cart-plus"></i> Add</a>
         </div>
-
-        <!-- Product 2 -->
-        <div class="product-card">
-          <img src="images/hat2-400x400.jpg" alt="Beautiful Hat" />
-          <a href="Beautiful Hat.html" class="view-details">View Details</a>
-          <div class="product-info">
-            <p>Beautiful Hat <br> £15.00</p>
-            <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
-          </div>
-        </div>
-
-        <!-- Product 3 -->
-        <div class="product-card">
-          <img src="images/shoes-man-1-400x400.jpg" alt="Brown Shoes" />
-          <a href="Brown Shoes.html" class="view-details">View Details</a>
-          <div class="product-info">
-            <p>Brown Shoes <br> £15.00</p>
-            <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
-          </div>
-        </div>
-
-        <!-- Product 4 -->
-        <div class="product-card">
-          <img src="images/bag3-400x400.jpg" alt="Brown Backpack" />
-          <a href="Brown Backpack.html" class="view-details">View Details</a>
-          <div class="product-info">
-            <p>Brown Backpack <br> £15.00</p>
-            <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
-          </div>
-        </div>
-      </div>
     </div>
-  </section>
-
-  <!-- ===== Why Our Store ===== -->
-  <section class="why-store text-center py-5 bg-light">
-    <div class="container">
-      <h2>Why Our Store?</h2>
-      <p>Faucibus dictum in eget metus. Duis suscipit elit sem, sed mattis tellus accumsan eget.
-        Quisque consequat venenatis rutrum. Quisque posuere enim augue, in rhoncus diam dictum non.</p>
-
-      <div class="row mt-5">
-        <div class="col-md-4">
-          <h4>Premium Support</h4>
-          <p>Phasellus ultricies nisi at scelerisque pellentesque.</p>
+    <div class="card2">
+        <img src="images/product2.jpg" class="card2-img-top" alt="Product 2">
+        <div class="card2-body">
+            <h5 class="card2-title">Product 2</h5>
+            <p class="card2-text">$30.00</p>
+            <a href="#" class="add-to-cart"><i class="fas fa-cart-plus"></i> Add</a>
         </div>
-        <div class="col-md-4">
-          <h4>Incredible Team</h4>
-          <p>Phasellus ultricies nisi at scelerisque pellentesque.</p>
-        </div>
-        <div class="col-md-4">
-          <h4>Facilities</h4>
-          <p>Phasellus ultricies nisi at scelerisque pellentesque.</p>
-        </div>
-      </div>
     </div>
-  </section>
+    <!-- تقدر تضيف باقي الكروت بنفس الشكل -->
+</section>
 
-  <!-- ===== CTA Section ===== -->
-  <section class="cta text-center text-white py-5" style="background-image: url('images/night-hill-top-wallpaper-1920x600_57.jpg'); background-size: cover;">
-    <div class="overlay"></div>
-    <h1>Feeling convinced?</h1>
-    <p>I am a subtitle, feel free to change me!</p>
-    <a href="#" class="btn btn-light mt-3 px-4">Visit Shop</a>
-  </section>
+<!-- Footer -->
+<footer class="footer">
+    <p>© 2025 My Responsive Web. All Rights Reserved.</p>
+    <ul class="social-media-links">
+        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+    </ul>
+</footer>
 
-  <!-- ===== Footer Section ===== -->
-  <footer class="footer text-white text-center py-5" style="background-color: #111;">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3">
-          <h4>About Us</h4>
-          <p>We are the champions! We are the most amazing theme of all time, yeah.</p>
-        </div>
-        <div class="col-md-3">
-          <h4>Opening Hours</h4>
-          <ul class="list-unstyled">
-            <li>Monday–Friday: 10AM–9PM</li>
-            <li>Weekends: 10AM–9PM</li>
-          </ul>
-        </div>
-        <div class="col-md-3">
-          <h4>Top Rated</h4>
-          <ul class="list-unstyled">
-            <li><a href="Basic sandel.html" target="_blank">Basic Sandals - £20.00</a></li>
-            <li><a href="Light Shoes.html" target="_blank">Light Shoes - £18.00</a></li>
-            <li><a href="White bag.html" target="_blank">White Bag - £35.00</a></li>
-          </ul>
-        </div>
-        <div class="col-md-3">
-          <h4>Contact</h4>
-          <ul class="list-unstyled">
-            <li><i class="fa-solid fa-location-dot"></i> Manchester Road 123-78B</li>
-            <li><i class="fa-solid fa-phone"></i> +46 123 456 789</li>
-            <li><i class="fa-solid fa-envelope"></i> hello@sitename.com</li>
-          </ul>
-        </div>
-      </div>
-
-      <ul class="social-media-links mt-4 list-inline">
-        <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-        <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
-        <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
-        <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-      </ul>
-    </div>
-  </footer>
-
-  <!-- ===== Scroll to Top Button ===== -->
-  <button id="scrollTopBtn" class="btn btn-dark position-fixed" style="bottom: 20px; right: 20px; display: none;">↑</button>
-
-  <!-- Bootstrap Script -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Custom Script -->
-  <script src="script.js"></script>
-
+<script src="script.js"></script>
 </body>
 </html>
