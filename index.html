@@ -1,299 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ENGAGE</title>
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ENGAGE</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <img class="asd" src="images/camera-photographer-monochrome-ara-güler-wallpaper.jpg">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">ENGAGE</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Shop</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                           aria-expanded="false">
-                            About
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Blog</a></li>
-                            <li><a class="dropdown-item" href="#">Contact</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Reviews of Our Customers</a></li>
-                        </ul>
-                    </li>
-                </ul>
-				<a href="#" class="cart-icon">
-					<i class="fa-solid fa-cart-shopping fa-2x"></i>
-					<span class="cart-count">0</span> 
-				</a>
-				
-                <form class="d-flex ms-3" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
-        </div>
-    </nav>    
-<div class="container mt-5">
-    <h1> Welcome to</h1>
-    <br>
-    <h2> Dark Shop </h2>
-    <p> We're the biggest, best equipped and most <br>advanced Web Agency in the greater <br> Los Angeles area. </p>
-</div>
-<div class="buttonn">
-  <a href="#" class="but12">Learn more</a>
-</div>
-</div>
-</section>
-<button id="scrollTopBtn" class="btn btn-primary" style="position: fixed; bottom: 20px; right: 20px; display: none;"> ↑
-</button>
-<input type="color" id="colorPicker" class="form-control form-control-color" value="#000000">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<section class="son">
-    <img class="bottom-img" src="images/5252851-person-fashion-sweatshirt-model-black-and-white-brand-hand-tights-sweater-gray-black-designer-creative-commons-images.jpg">
-</section> 
-<section class="pro">
-        <h2>Learn about us</h2>
-       <p>We have been operating for over 30 years and are Members of<br> The Federation of Master Builders.<br> We work on projects big and small from small residential<br> extensions to full house and commercial builds and we<br> are registered NHBC house builders.</p>
-    </section>
-    <div class="llp">
-    <div class="card">
-        <img src="images/shoes2-400x400.jpg" class="card-img-top" alt="Light Shoes">
-        <a href="Light Shoes.html"class="view-details">View Details
+
+  <!-- ===== Navbar ===== -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#">ENGAGE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">About</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Blog</a></li>
+              <li><a class="dropdown-item" href="#">Contact</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Reviews of Our Customers</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <a href="#" class="cart-icon position-relative me-3">
+          <i class="fa-solid fa-cart-shopping fa-lg"></i>
+          <span class="cart-count position-absolute top-0 start-100 translate-middle badge bg-danger">0</span>
         </a>
-        <div class="card-body">
-            <p class="card-text">
-                Light Shoes <br> £18.00
-            </p>
-            <div class="add-to-cart">
-                <i class="fas fa-shopping-cart"></i> Add to Cart
-            </div>
-        </div>
+
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
       </div>
-      <div class="card2">
-        <img src="images/hat2-400x400.jpg" class="card-img-top" alt="Beutiful hat">
-        <a href="Beautiful Hat.html" class="view-details">View Details</a>
-        <div class="card2-body">
-            <p class="card2-text">
-                Beutiful hat <br> £15.00
-            </p>
-            <div class="add-to-cart">
-                <i class="fas fa-shopping-cart"></i> Add to Cart
-            </div>
+    </div>
+  </nav>
+
+  <!-- ===== Hero Section ===== -->
+  <section class="hero-section text-center text-white d-flex align-items-center justify-content-center" style="background-image: url('images/camera-photographer-monochrome-ara-güler-wallpaper.jpg');">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Welcome to</h1>
+      <h2>Dark Shop</h2>
+      <p>We're the biggest, best equipped and most advanced Web Agency in the greater Los Angeles area.</p>
+      <a href="#" class="btn btn-light mt-3 px-4">Learn More</a>
+    </div>
+  </section>
+
+  <!-- ===== About Section ===== -->
+  <section class="about text-center py-5">
+    <div class="container">
+      <h2>Learn about us</h2>
+      <p>We have been operating for over 30 years and are Members of The Federation of Master Builders.
+        We work on projects big and small from small residential extensions to full house and commercial builds.
+        We are registered NHBC house builders.</p>
+    </div>
+  </section>
+
+  <!-- ===== Products Section ===== -->
+  <section class="products py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Our Products</h2>
+      <div class="products-container">
+
+        <!-- Product 1 -->
+        <div class="product-card">
+          <img src="images/shoes2-400x400.jpg" alt="Light Shoes" />
+          <a href="Light Shoes.html" class="view-details">View Details</a>
+          <div class="product-info">
+            <p>Light Shoes <br> £18.00</p>
+            <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+          <img src="images/hat2-400x400.jpg" alt="Beautiful Hat" />
+          <a href="Beautiful Hat.html" class="view-details">View Details</a>
+          <div class="product-info">
+            <p>Beautiful Hat <br> £15.00</p>
+            <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+          <img src="images/shoes-man-1-400x400.jpg" alt="Brown Shoes" />
+          <a href="Brown Shoes.html" class="view-details">View Details</a>
+          <div class="product-info">
+            <p>Brown Shoes <br> £15.00</p>
+            <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card">
+          <img src="images/bag3-400x400.jpg" alt="Brown Backpack" />
+          <a href="Brown Backpack.html" class="view-details">View Details</a>
+          <div class="product-info">
+            <p>Brown Backpack <br> £15.00</p>
+            <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+          </div>
         </div>
       </div>
     </div>
-      <section class="proo">
-        <h2>Learn about us</h2>
-        <p>We have been operating for over 30 years and are Members of<br> The Federation of Master Builders.<br> We work on projects big and small from small residential<br> extensions to full house and commercial builds and we<br> are registered NHBC house builders.</p>
-    </section>
-      <section class="sonn">
-        <img class="photo" src="images/OIP_1.jpeg">
-      </section>
-      <div class="lli">
-      <div class="card3">
-        <img src="images/shoes-man-1-400x400.jpg" class="card-img-top" alt="Brown shoes">
-        <a href="Brown Shoes.html" class="view-details">View Details</a>
-        <div class="card-body">
-            <p class="card-text">
-                Brown shoes <br> £15.00
-            </p>
-            <div class="add-to-cart">
-                <i class="fas fa-shopping-cart"></i> Add to Cart
-            </div>
+  </section>
+
+  <!-- ===== Why Our Store ===== -->
+  <section class="why-store text-center py-5 bg-light">
+    <div class="container">
+      <h2>Why Our Store?</h2>
+      <p>Faucibus dictum in eget metus. Duis suscipit elit sem, sed mattis tellus accumsan eget.
+        Quisque consequat venenatis rutrum. Quisque posuere enim augue, in rhoncus diam dictum non.</p>
+
+      <div class="row mt-5">
+        <div class="col-md-4">
+          <h4>Premium Support</h4>
+          <p>Phasellus ultricies nisi at scelerisque pellentesque.</p>
+        </div>
+        <div class="col-md-4">
+          <h4>Incredible Team</h4>
+          <p>Phasellus ultricies nisi at scelerisque pellentesque.</p>
+        </div>
+        <div class="col-md-4">
+          <h4>Facilities</h4>
+          <p>Phasellus ultricies nisi at scelerisque pellentesque.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA Section ===== -->
+  <section class="cta text-center text-white py-5" style="background-image: url('images/night-hill-top-wallpaper-1920x600_57.jpg'); background-size: cover;">
+    <div class="overlay"></div>
+    <h1>Feeling convinced?</h1>
+    <p>I am a subtitle, feel free to change me!</p>
+    <a href="#" class="btn btn-light mt-3 px-4">Visit Shop</a>
+  </section>
+
+  <!-- ===== Footer Section ===== -->
+  <footer class="footer text-white text-center py-5" style="background-color: #111;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h4>About Us</h4>
+          <p>We are the champions! We are the most amazing theme of all time, yeah.</p>
+        </div>
+        <div class="col-md-3">
+          <h4>Opening Hours</h4>
+          <ul class="list-unstyled">
+            <li>Monday–Friday: 10AM–9PM</li>
+            <li>Weekends: 10AM–9PM</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h4>Top Rated</h4>
+          <ul class="list-unstyled">
+            <li><a href="Basic sandel.html" target="_blank">Basic Sandals - £20.00</a></li>
+            <li><a href="Light Shoes.html" target="_blank">Light Shoes - £18.00</a></li>
+            <li><a href="White bag.html" target="_blank">White Bag - £35.00</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h4>Contact</h4>
+          <ul class="list-unstyled">
+            <li><i class="fa-solid fa-location-dot"></i> Manchester Road 123-78B</li>
+            <li><i class="fa-solid fa-phone"></i> +46 123 456 789</li>
+            <li><i class="fa-solid fa-envelope"></i> hello@sitename.com</li>
+          </ul>
         </div>
       </div>
 
-      <div class="card4">
-        <img src="images/bag3-400x400.jpg" class="card-img-top" alt="Brown Backpack">
-        <a href="Brown Backpack.html" class="view-details">View Details</a>
-        <div class="card2-body">
-            <p class="card2-text">
-                Brown Backpack <br> £15.00
-            </p>
-            <div class="add-to-cart">
-                <i class="fas fa-shopping-cart"></i> Add to Cart
-            </div>
-        </div>
-      </div> >>
+      <ul class="social-media-links mt-4 list-inline">
+        <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+        <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+      </ul>
     </div>
-    <section class="son2"></section>
-      <section class="best">
-        <h1>Best sellers</h1>
-        <p>Faucibus dictum in eget metus. Duis suscipit elit sem,<br> sed mattis tellus accumsan eget. Quisque consequat venenatis rutrum.<br> Quisque posuere enim augue, in rhoncus diam dictum non. Etiam mollis pulvinar nisl.</p>
-      </section>
-        <section class="classess">
-            <div class="card11">
-                <img src="images/shirt1-400x400.jpg" class="card-img-top" alt="Lily Shirt">
-                <a href="Lily shirt.html" class="view-details">View Details</a>
-                <div class="card2-body">
-                    <p class="card2-text">
-                        Lily Shirt <br> £20.00
-                    </p>
-                    <div class="add-to-cart">
-                        <i class="fas fa-shopping-cart"></i> Add to Cart
-                    </div>
-                </div>
-              </div> 
-              <div class="card12">
-                <img src="images/hat1.jpg" class="card-img-top" alt="Cool Hat">
-                <a href="Cool Hat.html" class="view-details">View Details</a>
-                <div class="card2-body">
-                    <p class="card2-text">
-                        Cool Hat <br> £12.00
-                    </p>
-                    <div class="add-to-cart">
-                        <i class="fas fa-shopping-cart"></i> Add to Cart
-                    </div>
-                </div>
-              </div> 
-              <div class="card13">
-                <img src="images/shoes.jpg" class="card-img-top" alt="Basic Sandals">
-                <a href="Basic sandel.html" class="view-details">View Details</a>
-                <div class="card2-body">
-                    <p class="card2-text">
-                        Basic Sandals <br> £20.00
-                    </p>
-                    <div class="add-to-cart">
-                        <i class="fas fa-shopping-cart"></i> Add to Cart
-                    </div>
-                </div>
-              </div> 
-              <div class="card14">
-                <img src="images/shoes-man-1-400x400.jpg" class="card-img-top" alt="Brown Backpack">
-                <a href="Brown Backpack.html" class="view-details">View Details</a>
-                <div class="card2-body">
-                    <p class="card2-text">
-                        Brown shoes <br> £15.00
-                    </p>
-                    <div class="add-to-cart">
-                        <i class="fas fa-shopping-cart"></i> Add to Cart
-                    </div>
-                </div>
-              </div> 
-        </section>
-        <section class="son3"></section>
-      <section class="best2">
-        <h1>Why our store?</h1>
-        <p>Faucibus dictum in eget metus. Duis suscipit elit sem,<br> sed mattis tellus accumsan eget. Quisque consequat venenatis .<br> Quisque posuere enim augue, in rhoncus diam dictum non. </p>
-      </section>
-      <div class="containerr">
-        <div class="itemm">
-            <h3>Premium Support</h3>
-            <p>Ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies nisi at scelerisque pellentesque. Nunc feugiat felis vitae aliquet consequat. Aliquam ullamcorper.</p>
-        </div>
-        <div class="itemm">
-            <h3>Incredible Team</h3>
-            <p>Ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies nisi at scelerisque pellentesque. Nunc feugiat felis vitae aliquet consequat. Aliquam ullamcorper.</p>
-        </div>
-        <div class="itemm">
-            <h3>Incredible Location</h3>
-            <p>Ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies nisi at scelerisque pellentesque. Nunc feugiat felis vitae aliquet consequat. Aliquam ullamcorper.</p>
-        </div>
-        <div class="itemm">
-            <h3>Facilities</h3>
-            <p>Ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies nisi at scelerisque pellentesque. Nunc feugiat felis vitae aliquet consequat. Aliquam ullamcorper.</p>
-        </div>
-        <div class="itemm">
-            <h3>Best Equipment</h3>
-            <p>Ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies nisi at scelerisque pellentesque. Nunc feugiat felis vitae aliquet consequat. Aliquam ullamcorper.</p>
-        </div>
-        <div class="itemm">
-            <h3>Incredible Location</h3>
-            <p>Ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies nisi at scelerisque pellentesque. Nunc feugiat felis vitae aliquet consequat. Aliquam ullamcorper.</p>
-        </div>
-    </div>
-    <img class="bottom-img31" src="images/night-hill-top-wallpaper-1920x600_57.jpg">
-    <section class="best3">
-        <h1>Feeling convinced?</h1>
-        <p>I am a subtitle, feel free to change me!</p>
-      </section>
-      <div class="buttonn2">
-        <a href="#" class="but13">Visit shop</a>
-      </div>
-      <section class="son4"></section>
-      <section class="bero">
-      <div class="son5">
-        <h1>About us</h1>
-        <p>I am text block.
-             Click edit button to change <br><br>
-             Lorem ipsum dolor sit amet, consectetur.<br><br>
-              I am text block. Click edit button to change .<br><br>
-               Lorem ipsum dolor sit amet, consectetur.<br><br>
-            We are the champions! We are the most <br>amazing theme of all time, yeah.</p>
-      </div>
-      <div class="son6">
-        <ul>
-        <h1>Opening Hours</h1>
-            <li>Monday 10AM – 9PM</li><hr>
-            <li>Tuesday  10AM – 9PM</li><hr>
-            <li>Wednesday  10AM – 9PM</li><hr>
-            <li>Thursday  10AM – 9PM</li><hr>
-            <li>Friday 10AM – 9PM</li><hr>
-            <li>Weekends 10AM – 9PM</li>
-        </ul>
-      </div>
-      <div class="son7">
-        <ul>
-        <h1>Top rated</h1>
-        <li>
-            <a href="Basic sandel.html" target="_blank">Basic Sandals</a><br><br>
-            £20.00
-            <img class="a23" src="icons/shoes.jpg">
-        </li>
-        <hr>
-        <li>
-            <a href="Light Shoes.html" target="_blank">Light Shoes</a><br><br>
-            £18.00
-            <img class="a24" src="icons/shoes2-400x400.jpg">
-        </li>
-        <hr>
-        <li>
-            <a href="White bag.html" target="_blank">White Bag</a><br><br>
-            £35.00
-            <img class="a25" src="icons/bag2-1.jpg">
-        </li>
-        <hr>
-        
-        </div>
-        <div class="son8">
-            <ul>
-            <h1>Contact Details</h1>
-                <li><i class="fa-solid fa-location-dot"></i> Manchester Road 123-78B, <br>Silictown 7854MD, Great Country<br></li><hr>
-                <li><i class="fa-solid fa-phone"></i> +46 123 456 789<br></li><hr>
-                <li><i class="fa-solid fa-envelope"></i> hello@sitename.com<br></li><hr>
-                <li><i class="fa-solid fa-globe"></i> http://www.sitename.com<br></li><hr>
-            </ul>
-            </div>
-      </section>
-      <footer class="footer">
-        <ul class="social-media-links">
-            <li><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a></li>
-        </ul>
-    </footer>
-    
-<script src="script.js"></script>
+  </footer>
+
+  <!-- ===== Scroll to Top Button ===== -->
+  <button id="scrollTopBtn" class="btn btn-dark position-fixed" style="bottom: 20px; right: 20px; display: none;">↑</button>
+
+  <!-- Bootstrap Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom Script -->
+  <script src="script.js"></script>
+
 </body>
 </html>
